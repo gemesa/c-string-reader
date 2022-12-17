@@ -1,0 +1,10 @@
+#ifndef C_STRING_READER_CONFIG_H
+#define C_STRING_READER_CONFIG_H
+
+enum
+{
+    MAX_LENGTH = 5,
+    MAX_STRINGS = 10
+};
+
+#endif//C_STRING_READER_CONFIG_H
