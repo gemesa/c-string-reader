@@ -8,4 +8,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 SET (CMAKE_C_COMPILER "/usr/bin/clang")
 SET (CMAKE_CXX_COMPILER "/usr/bin/clang++")
 
+file(MAKE_DIRECTORY artifacts)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/artifacts)
+
 add_executable(c_string_reader main.c)
