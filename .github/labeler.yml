@@ -1,0 +1,18 @@
+ci/cd:
+  - .github/**
+
+build:
+  - CMakeLists.txt
+  - .clang-format
+  - .clang-tidy
+
+chore:
+  - .gitignore
+
+documentation:
+  - LICENSE.md
+  - README.md
+  - ./*.md
+
+main:
+  - main.c

@@ -1,0 +1,28 @@
+name: c-string-reader workflow
+
+on: [push]
+
+jobs:
+  rgaas-workflow:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: CMake config
+        run: cmake .
+
+      - name: Clang-Format
+        run: find . -name *.h -o -name *.c | xargs clang-format-14 --dry-run -Werror
+
+      - name: Clang-Tidy
+        run: find . -name *.h -o -name *.c | xargs clang-tidy-14
+
+      - name: CMake build
+        run: cmake --build .
+
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifacts
+          path: build
