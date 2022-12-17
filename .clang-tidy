@@ -21,7 +21,7 @@ CheckOptions:
   misc-const-correctness.AnalyzeValues: 'true'
   cert-sig30-c.AsyncSafeFunctionSet: POSIX
   readability-inconsistent-declaration-parameter-name.Strict: 'false'
-  cert-err61-cpp.MaxSize: '-1'
+  cert-err61-cpp.MaxSize: '8'
   modernize-replace-disallow-copy-and-assign-macro.MacroName: DISALLOW_COPY_AND_ASSIGN
   modernize-use-default-member-init.UseAssignment: 'false'
   readability-suspicious-call-argument.DiceDissimilarBelow: '60'
@@ -59,7 +59,7 @@ CheckOptions:
   readability-suspicious-call-argument.SuffixSimilarAbove: '30'
   misc-definitions-in-headers.HeaderFileExtensions: ';h;hh;hpp;hxx'
   readability-suspicious-call-argument.Suffix: 'true'
-  cert-err09-cpp.MaxSize: '-1'
+  cert-err09-cpp.MaxSize: '8'
   modernize-use-override.FinalSpelling: final
   modernize-loop-convert.UseCxx20ReverseRanges: 'true'
   modernize-use-noexcept.ReplacementString: ''
@@ -157,7 +157,7 @@ CheckOptions:
   performance-faster-string-find.StringLikeClasses: '::std::basic_string;::std::basic_string_view'
   readability-function-size.BranchThreshold: '4294967295'
   modernize-use-noexcept.UseNoexceptFalse: 'true'
-  misc-throw-by-value-catch-by-reference.MaxSize: '-1'
+  misc-throw-by-value-catch-by-reference.MaxSize: '8'
   readability-implicit-bool-conversion.AllowIntegerConditions: 'false'
   readability-identifier-length.IgnoredParameterNames: '^[n]$'
   cert-err61-cpp.CheckThrowTemporaries: 'true'
