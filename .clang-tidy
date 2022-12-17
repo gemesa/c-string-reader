@@ -1,5 +1,5 @@
 ---
-Checks:          'clang-diagnostic-*,clang-analyzer-*,-*,cert-*,clang-analyzer-*,llvm-*,misc-*,modernize-*,performance-*,portability-*,readability-*'
+Checks:          'clang-diagnostic-*,clang-analyzer-*,-*,cert-*,clang-analyzer-*,llvm-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-readability-identifier-length,-llvm-header-guard'
 WarningsAsErrors: '*'
 HeaderFilterRegex: ''
 AnalyzeTemporaryDtors: false
