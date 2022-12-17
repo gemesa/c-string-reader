@@ -21,6 +21,12 @@ jobs:
       - name: CMake build
         run: cmake --build .
 
+      - name: Valgrind (install)
+        run: sudo apt-get install valgrind -y
+
+      - name: Valgrind (run)
+        run: chmod +x ./test/valgrind.sh && ./test/valgrind.sh
+
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
         with:
