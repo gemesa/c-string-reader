@@ -12,4 +12,4 @@ file(MAKE_DIRECTORY artifacts)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/artifacts)
 
-add_executable(c_string_reader main.c)
+add_executable(c-string-reader main.c)
