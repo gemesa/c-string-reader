@@ -4,7 +4,7 @@ valgrind --leak-check=full \
   --verbose \
   --error-exitcode=1 \
   --log-file="$(dirname "$0")/../artifacts/valgrind.log" \
-  "$(dirname "$0")/../artifacts/c-string-reader" >"$(dirname "$0")/../artifacts/c-string-reader.log"
+  "$(dirname "$0")/../artifacts/c-string-reader" -t "$(dirname "$0")/input.txt" >"$(dirname "$0")/../artifacts/c-string-reader.log"
 
 status=$?
 
