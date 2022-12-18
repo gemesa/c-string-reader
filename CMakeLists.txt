@@ -14,6 +14,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/artifacts)
 
 add_executable(c-string-reader
         main.c
+        modules/config.h
         modules/reader/reader.c
         modules/reader/reader.h
-        modules/config.h)
+        modules/argparser/argparser.c
+        modules/argparser/argparser.h)
+

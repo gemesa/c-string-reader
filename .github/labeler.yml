@@ -16,3 +16,12 @@ documentation:
 
 main:
   - main.c
+
+reader:
+  - modules/reader/**
+
+argparser:
+  - modules/argparser/**
+
+config:
+  - modules/config.h
