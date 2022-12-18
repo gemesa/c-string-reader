@@ -31,7 +31,7 @@ void argparser_parse(void *s, int argc, char **argv)
 void argparser_print(void *s)
 {
     argparser_t *self = s;
-    (void)self;
+    (void) self;
 
     printf("Usage: c-string-reader [-h] [-t input_file]\n"
            "  -h: print this help message\n"
