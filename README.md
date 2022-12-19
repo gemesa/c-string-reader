@@ -1,16 +1,16 @@
 # c-string-reader
 
-Usage: `c-string-reader [-h] [-t input_file]`
-- -h: print this help message
-- -t: test mode
-  - if not specified input is read from stdin
-  - if specified input is read from an input text file (containing newline separated strings)
-
 `c-string-reader` reads the variable length strings from stdin (or a specified input text file) and stores them in an array of pointers to strings. The characters are read one by one until a newline is found (newline will be stripped from the string). After collecting all of them, the strings are printed to stdout. The maximum number of strings is 10 and the maximum length of each string is 5. Empty strings are accepted.
 The program exits if any of the following conditions is true:
 - the maximum number of strings is reached,
 - "exit" string is provided,
 - invalid input is provided.
+
+Usage: `c-string-reader [-h] [-t input_file]`
+- h: print this help message
+- t: test mode
+  - if not specified input is read from stdin
+  - if specified input is read from an input text file (containing newline separated strings)
 
 ## Installation from source
 
